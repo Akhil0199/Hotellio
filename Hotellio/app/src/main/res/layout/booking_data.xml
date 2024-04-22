@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/bg"
+    android:layout_marginRight="10dp">
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Booking Details"
+            android:textColor="#ED420C"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/hotelImage8"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginVertical="10dp"
+            android:layout_below="@+id/textView9"
+           android:layout_marginLeft="80dp"
+            android:layout_marginTop="5dp"></ImageView>
+
+
+        <TextView
+            android:id="@+id/hotelName8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="hotelName"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/hotelImage8"
+            android:textColor="#3366cc" />
+
+        <TextView
+            android:id="@+id/location8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="location"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/hotelName8"
+            android:textColor="#3366cc" />
+
+        <TextView
+            android:id="@+id/typeOfRoom8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="typeOfRoom"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/location8"
+            android:textColor="#3366cc" />
+
+        <TextView
+            android:id="@+id/noOfRooms8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/typeOfRoom8"
+            android:layout_marginLeft="30dp"
+            android:text="noOfRooms"
+            android:textColor="#3366cc" />
+
+        <TextView
+            android:id="@+id/checkIn8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="checkin"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/noOfRooms8"
+            android:textColor="#3366cc" />
+
+        <TextView
+            android:id="@+id/checkOut8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="checkout"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/checkIn8"
+            android:textColor="#3366cc" />
+
+
+        <Button
+            android:id="@+id/cancelBooking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_button"
+            android:backgroundTint="#3366cc"
+            android:text="Cancel Booking"
+            android:layout_below="@+id/checkOut8"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hotelImage8"
+            android:layout_marginTop="9dp"
+            app:srcCompat="@drawable/ic_hotel"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView14"
+            android:layout_marginTop="3dp"
+            app:srcCompat="@drawable/ic_location" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView19"
+            android:layout_marginTop="4dp"
+            app:srcCompat="@drawable/ic_calendar" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView16"
+            android:layout_marginTop="3dp"
+            app:srcCompat="@drawable/ic_calendar" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView15"
+            android:layout_marginTop="7dp"
+            app:srcCompat="@drawable/ic_room_preferences" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView18"
+            android:layout_marginTop="4dp"
+            app:srcCompat="@drawable/ic_number" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

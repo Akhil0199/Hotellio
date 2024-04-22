@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <Button
+        android:id="@+id/addHotelImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_button"
+        android:backgroundTint="#3366cc"
+        android:text="Add Hotel Image"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/bg_button"
+        android:backgroundTint="#3366cc"
+        android:gravity="center"
+        android:text="Add"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facilities" />
+
+    <EditText
+        android:id="@+id/hotelName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/blue_border_rounded_cornwe"
+        android:ems="10"
+        android:hint="Hotel Name"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addHotelImage" />
+
+    <EditText
+        android:id="@+id/location3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/blue_border_rounded_cornwe"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Location"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nonAcRoomPrice" />
+
+    <EditText
+        android:id="@+id/facilities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/blue_border_rounded_cornwe"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Facilities"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location3" />
+
+    <EditText
+        android:id="@+id/totalAcRooms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:ems="10"
+        android:textSize="24sp"
+        android:background="@drawable/blue_border_rounded_cornwe"
+        android:hint="Total Suites"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotelName" />
+
+    <EditText
+        android:id="@+id/totalNonAcRooms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:hint="Total Single Rooms"
+        android:background="@drawable/blue_border_rounded_cornwe"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acRoomPrice" />
+
+    <EditText
+        android:id="@+id/nonAcRoomPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:textSize="24sp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Single Room Price"
+        android:background="@drawable/blue_border_rounded_cornwe"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalNonAcRooms" />
+
+    <EditText
+        android:id="@+id/acRoomPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:textSize="24sp"
+        android:ems="10"
+        android:hint="Suite Price"
+        android:gravity="center"
+        android:background="@drawable/blue_border_rounded_cornwe"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalAcRooms" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginLeft="117dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginRight="117dp"
+        android:contentDescription="TODO"
+        android:foregroundGravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_mage"
+        tools:ignore="VectorDrawableCompat" />
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginRight="47dp"
+        android:background="@drawable/bg_button"
+        android:backgroundTint="#3366cc"
+        android:text="Upload"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/addHotelImage"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
